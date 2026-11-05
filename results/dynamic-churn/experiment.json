@@ -1,0 +1,7 @@
+{
+  "scenario": "churn",
+  "mode": "dynamic",
+  "count_per_client": 60,
+  "failure_wall_time": 1793902772.8543994,
+  "restart_wall_time": 1793902777.9344568
+}

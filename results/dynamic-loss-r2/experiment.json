@@ -1,0 +1,5 @@
+{
+  "scenario": "loss",
+  "mode": "dynamic",
+  "count_per_client": 60
+}

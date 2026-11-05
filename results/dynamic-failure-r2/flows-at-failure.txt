@@ -1,0 +1,20 @@
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+ cookie=0x21, duration=0.041s, table=0, n_packets=13, n_bytes=1560, hard_timeout=3, priority=200,udp,nw_dst=10.0.0.3,tp_dst=10002 actions=NORMAL
+ cookie=0x21, duration=0.033s, table=0, n_packets=12, n_bytes=1440, hard_timeout=3, priority=200,udp,nw_dst=10.0.0.2,tp_dst=10001 actions=NORMAL
+ cookie=0x0, duration=4.181s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10000 actions=drop
+ cookie=0x0, duration=4.175s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10001 actions=drop
+ cookie=0x0, duration=4.167s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10002 actions=drop
+ cookie=0x0, duration=4.160s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10003 actions=drop
+ cookie=0x0, duration=4.154s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10004 actions=drop
+ cookie=0x0, duration=4.147s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10005 actions=drop
+ cookie=0x0, duration=4.141s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10006 actions=drop
+ cookie=0x0, duration=4.134s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10007 actions=drop
+ cookie=0x0, duration=4.127s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10008 actions=drop
+ cookie=0x0, duration=4.120s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10009 actions=drop
+ cookie=0x0, duration=4.114s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10010 actions=drop
+ cookie=0x0, duration=4.107s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10011 actions=drop
+ cookie=0x0, duration=4.101s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10012 actions=drop
+ cookie=0x0, duration=4.095s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10013 actions=drop
+ cookie=0x0, duration=4.087s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10014 actions=drop
+ cookie=0x0, duration=4.080s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10015 actions=drop
+ cookie=0x0, duration=4.189s, table=0, n_packets=138, n_bytes=17187, priority=0 actions=NORMAL

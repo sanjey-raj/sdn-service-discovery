@@ -1,0 +1,20 @@
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+ cookie=0x21, duration=0.149s, table=0, n_packets=29, n_bytes=3432, hard_timeout=3, priority=200,udp,nw_dst=10.0.0.2,tp_dst=10001 actions=NORMAL
+ cookie=0x21, duration=0.136s, table=0, n_packets=76, n_bytes=9120, hard_timeout=3, priority=200,udp,nw_dst=10.0.0.3,tp_dst=10002 actions=NORMAL
+ cookie=0x0, duration=13.740s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10000 actions=drop
+ cookie=0x0, duration=13.733s, table=0, n_packets=98, n_bytes=9398, priority=100,udp,tp_dst=10001 actions=drop
+ cookie=0x0, duration=13.725s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10002 actions=drop
+ cookie=0x0, duration=13.719s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10003 actions=drop
+ cookie=0x0, duration=13.712s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10004 actions=drop
+ cookie=0x0, duration=13.705s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10005 actions=drop
+ cookie=0x0, duration=13.699s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10006 actions=drop
+ cookie=0x0, duration=13.693s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10007 actions=drop
+ cookie=0x0, duration=13.686s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10008 actions=drop
+ cookie=0x0, duration=13.679s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10009 actions=drop
+ cookie=0x0, duration=13.673s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10010 actions=drop
+ cookie=0x0, duration=13.666s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10011 actions=drop
+ cookie=0x0, duration=13.660s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10012 actions=drop
+ cookie=0x0, duration=13.653s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10013 actions=drop
+ cookie=0x0, duration=13.647s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10014 actions=drop
+ cookie=0x0, duration=13.640s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10015 actions=drop
+ cookie=0x0, duration=13.747s, table=0, n_packets=490, n_bytes=66265, priority=0 actions=NORMAL

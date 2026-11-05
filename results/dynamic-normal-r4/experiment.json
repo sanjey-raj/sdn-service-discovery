@@ -1,0 +1,5 @@
+{
+  "scenario": "normal",
+  "mode": "dynamic",
+  "count_per_client": 60
+}

@@ -1,0 +1,13 @@
+test_udp_discovery_call_crash_expiry_and_bad_packet (test_system.SocketIntegration.test_udp_discovery_call_crash_expiry_and_bad_packet) ... ok
+test_dynamic_policy_removal_and_refresh (test_system.StateTests.test_dynamic_policy_removal_and_refresh) ... {"event": "reconcile", "mode": "dynamic", "active": [["10.0.0.2", 10001]]}
+{"event": "reconcile", "mode": "dynamic", "active": []}
+ok
+test_heartbeat_expiry_withdraw_and_multiple_servers (test_system.StateTests.test_heartbeat_expiry_withdraw_and_multiple_servers) ... ok
+test_malformed_advertisement (test_system.StateTests.test_malformed_advertisement) ... ok
+test_static_policy_does_not_install_dynamic_rules (test_system.StateTests.test_static_policy_does_not_install_dynamic_rules) ... {"event": "reconcile", "mode": "static", "active": [["10.0.0.2", 10001]]}
+ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.909s
+
+OK

@@ -1,0 +1,6 @@
+{
+  "scenario": "failure",
+  "mode": "dynamic",
+  "count_per_client": 60,
+  "failure_wall_time": 1793903266.64225
+}

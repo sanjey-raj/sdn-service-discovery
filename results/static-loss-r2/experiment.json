@@ -1,0 +1,5 @@
+{
+  "scenario": "loss",
+  "mode": "static",
+  "count_per_client": 60
+}

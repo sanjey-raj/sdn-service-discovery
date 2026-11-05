@@ -1,0 +1,19 @@
+OFPST_FLOW reply (OF1.3) (xid=0x2):
+ cookie=0x21, duration=0.005s, table=0, n_packets=47, n_bytes=5640, hard_timeout=3, priority=200,udp,nw_dst=10.0.0.3,tp_dst=10002 actions=NORMAL
+ cookie=0x0, duration=9.330s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10000 actions=drop
+ cookie=0x0, duration=9.321s, table=0, n_packets=100, n_bytes=9590, priority=100,udp,tp_dst=10001 actions=drop
+ cookie=0x0, duration=9.313s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10002 actions=drop
+ cookie=0x0, duration=9.300s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10003 actions=drop
+ cookie=0x0, duration=9.289s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10004 actions=drop
+ cookie=0x0, duration=9.281s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10005 actions=drop
+ cookie=0x0, duration=9.274s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10006 actions=drop
+ cookie=0x0, duration=9.266s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10007 actions=drop
+ cookie=0x0, duration=9.259s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10008 actions=drop
+ cookie=0x0, duration=9.253s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10009 actions=drop
+ cookie=0x0, duration=9.246s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10010 actions=drop
+ cookie=0x0, duration=9.238s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10011 actions=drop
+ cookie=0x0, duration=9.232s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10012 actions=drop
+ cookie=0x0, duration=9.225s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10013 actions=drop
+ cookie=0x0, duration=9.219s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10014 actions=drop
+ cookie=0x0, duration=9.212s, table=0, n_packets=0, n_bytes=0, priority=100,udp,tp_dst=10015 actions=drop
+ cookie=0x0, duration=9.338s, table=0, n_packets=299, n_bytes=37905, priority=0 actions=NORMAL
