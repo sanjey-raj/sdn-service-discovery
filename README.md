@@ -4,9 +4,8 @@
 
 This edition includes 31 student-executed Mininet runs (3,720 attempts) from
 Ubuntu 24.04.4 on WSL 2. See `docs/REPORT.md` for measured results and limits.
-Run `python3 analyze_results.py` to reproduce the analysis. Raw experiment files
-are preserved under `results/`. GitHub publication is still pending.
-
+Run `python3 analyze\_results.py` to reproduce the analysis. Raw experiment files
+are preserved under `results/`.GitHub repository: https://github.com/sanjey-raj/sdn-service-discovery.
 
 A reproducible mini project for **SDN-Socket Programming – Jackfruit**.
 Servers advertise a named UDP service; clients query a lease-based registry and
@@ -49,10 +48,10 @@ Mininet resources; do it only when no other Mininet experiment is running.
 
 ```mermaid
 flowchart TD
-    A["Service servers a and b"] -->|"UDP advertisements / withdrawal"| R["Registry r"]
-    C["Clients c and d"] -->|"UDP discovery"| R
-    R -->|"Acknowledged Unix-socket snapshot"| P["SDN policy controller"]
-    P -->|"OpenFlow 1.3 via ovs-ofctl"| S["OVS switch s1"]
+    A\["Service servers a and b"] -->|"UDP advertisements / withdrawal"| R\["Registry r"]
+    C\["Clients c and d"] -->|"UDP discovery"| R
+    R -->|"Acknowledged Unix-socket snapshot"| P\["SDN policy controller"]
+    P -->|"OpenFlow 1.3 via ovs-ofctl"| S\["OVS switch s1"]
     C -->|"UDP service invocation"| S
     S -->|"Live endpoint allow rules"| A
 ```
@@ -77,11 +76,11 @@ permissions 0600. Mininet shares the filesystem, so namespace isolation does not
 prevent this out-of-band channel. Each reply waits for acknowledged switch rule
 updates. This deliberately includes control overhead in discovery latency.
 
-| Priority | Match | Action |
-|---|---|---|
-| 200 | UDP to a registered server IP and port | NORMAL; expires after 3 s without refresh |
-| 100 | UDP destination ports 10000–10015 | DROP, dynamic mode only |
-| 0 | Other traffic, including ARP and UDP 9999 | NORMAL |
+|Priority|Match|Action|
+|-|-|-|
+|200|UDP to a registered server IP and port|NORMAL; expires after 3 s without refresh|
+|100|UDP destination ports 10000–10015|DROP, dynamic mode only|
+|0|Other traffic, including ARP and UDP 9999|NORMAL|
 
 The controller only allows endpoints on server IPs `.2` and `.3` in the reserved
 port range. Registry sync refreshes allow rules every approximately 0.5 s and
@@ -149,35 +148,35 @@ There is no generic registry pagination; this lab is designed for a small servic
 
 ## Files and submission
 
-| File | Purpose |
-|---|---|
-| `app/registry.py` | Advertisement registry, TTL expiry and SDN synchronization |
-| `app/server.py` | Concurrent heartbeat and UDP echo service |
-| `app/client.py` | Retrying discovery/invocation with measured CSV output |
-| `app/probe.py` | Stale endpoint traffic for SDN enforcement validation |
-| `sdn/controller.py` | Dynamic OpenFlow policy, static baseline |
-| `topology.py` | Mininet setup, process lifecycle, experiment scenarios |
-| `summarize.py` | Aggregate success rate and latency percentiles |
-| `tests/test_system.py` | Unit and localhost UDP integration tests |
-| `docs/REPORT.md` | Report framework, rubric mapping and evaluation method |
-| `docs/DEMO.md` | D1/D2 demo and viva preparation |
-| `docs/VALIDATION.md` | What was actually tested and remaining checks |
+|File|Purpose|
+|-|-|
+|`app/registry.py`|Advertisement registry, TTL expiry and SDN synchronization|
+|`app/server.py`|Concurrent heartbeat and UDP echo service|
+|`app/client.py`|Retrying discovery/invocation with measured CSV output|
+|`app/probe.py`|Stale endpoint traffic for SDN enforcement validation|
+|`sdn/controller.py`|Dynamic OpenFlow policy, static baseline|
+|`topology.py`|Mininet setup, process lifecycle, experiment scenarios|
+|`summarize.py`|Aggregate success rate and latency percentiles|
+|`tests/test\_system.py`|Unit and localhost UDP integration tests|
+|`docs/REPORT.md`|Report framework, rubric mapping and evaluation method|
+|`docs/DEMO.md`|D1/D2 demo and viva preparation|
+|`docs/VALIDATION.md`|What was actually tested and remaining checks|
 
-To publish after extracting this folder (replace YOUR_USERNAME):
+To publish after extracting this folder (replace YOUR\_USERNAME):
 
 ```bash
 git init
 git add .
 git commit -m "Implement UDP service discovery with dynamic SDN filtering"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/sdn-service-discovery.git
+git remote add origin https://github.com/YOUR\_USERNAME/sdn-service-discovery.git
 git push -u origin main
 ```
 
 Create an empty GitHub repository first. Results are ignored by default: after
 reviewing them, explicitly add selected experiment folders with
 `git add -f results/dynamic-normal` etc. Never commit Unix sockets or caches.
-No GitHub repository has been created or published as part of this package.
+The source code, documentation and measured experiment results are published in the repository linked above.
 
 ## Limitations
 
@@ -194,7 +193,8 @@ within the same sample. Oversized registry responses are outside this lab's scop
 
 ## References
 
-- Supplied course file: Mininet Installation Guide on UBUNTU.docx.pdf.
-- Mininet walkthrough: https://mininet.org/walkthrough/
-- Open vSwitch OpenFlow FAQ: https://docs.openvswitch.org/en/stable/faq/openflow/
-- ovs-ofctl reference (flow syntax, cookies and timeouts): https://www.openvswitch.org/support/dist-docs/ovs-ofctl.8.html
+* Supplied course file: Mininet Installation Guide on UBUNTU.docx.pdf.
+* Mininet walkthrough: https://mininet.org/walkthrough/
+* Open vSwitch OpenFlow FAQ: https://docs.openvswitch.org/en/stable/faq/openflow/
+* ovs-ofctl reference (flow syntax, cookies and timeouts): https://www.openvswitch.org/support/dist-docs/ovs-ofctl.8.html
+
